@@ -1,0 +1,437 @@
+{
+  "version": "1.0",
+  "description": "Crop disease database covering rice, sugarcane, tomato, and wheat",
+  "classes": [
+    "healthy",
+    "rice_brown_spot",
+    "rice_leaf_blast",
+    "sugarcane_mosaic",
+    "sugarcane_rust",
+    "tomato_early_blight",
+    "tomato_late_blight",
+    "wheat_mildew",
+    "wheat_yellow_rust"
+  ],
+  "crops": [
+    {
+      "crop": "rice",
+      "diseases": [
+        {
+          "disease_id": "rice_brown_spot",
+          "common_name": "Rice Brown Spot",
+          "scientific_name": "Bipolaris oryzae",
+          "pathogen_type": "fungus",
+          "severity": "medium",
+          "affected_parts": [
+            "leaves",
+            "leaf sheaths",
+            "glumes"
+          ],
+          "symptoms": [
+            "Oval or cylindrical brown lesions on leaves, leaf sheaths, and glumes",
+            "Lesions often develop yellow halos",
+            "Enlarged lesions cause drying of leaves"
+          ],
+          "favourable_conditions": [
+            "Warm and humid conditions",
+            "Poor soil fertility",
+            "Nitrogen imbalance"
+          ],
+          "spread": [
+            "Favoured by warm humid weather",
+            "Spreads through infected plant debris"
+          ],
+          "treatment": [
+            "Apply recommended fungicides at early stages of infection",
+            "Monitor crop health regularly"
+          ],
+          "recommended_pesticides": [
+            {
+              "name": "Propiconazole",
+              "product_example": "Tilt Fungicide",
+              "dosage": "200 ml per acre or 1 ml per litre of water"
+            },
+            {
+              "name": "Hexaconazole",
+              "product_example": "Contaf Plus",
+              "dosage": "2 ml per litre of water"
+            },
+            {
+              "name": "Tricyclazole + Mancozeb",
+              "product_example": "Merger Fungicide",
+              "dosage": "400–500 g per acre"
+            },
+            {
+              "name": "Azoxystrobin + Difenoconazole",
+              "product_example": "Godiwa Super",
+              "dosage": "200 ml per acre"
+            }
+          ],
+          "prevention": [
+            "Treat seeds before sowing",
+            "Use resistant rice varieties",
+            "Apply balanced fertilizers",
+            "Remove weeds and plant debris from the field"
+          ],
+          "yield_impact": "Can reduce yield and grain quality if infection becomes severe",
+          "confused_with": [
+            "rice_leaf_blast"
+          ]
+        },
+        {
+          "disease_id": "rice_leaf_blast",
+          "common_name": "Rice Blast",
+          "scientific_name": "Magnaporthe oryzae",
+          "pathogen_type": "fungus",
+          "severity": "high",
+          "affected_parts": [
+            "leaf",
+            "leaf collar",
+            "node",
+            "neck",
+            "panicle",
+            "leaf sheath"
+          ],
+          "symptoms": [
+            "White or gray-green spots with dark green borders on leaves",
+            "Lesions become spindle-shaped with whitish centers and reddish-brown margins",
+            "Lesions may enlarge and merge, causing drying of leaves",
+            "Can kill young plants in severe cases"
+          ],
+          "favourable_conditions": [
+            "Frequent rain and high humidity",
+            "Cool daytime temperatures",
+            "Large day-night temperature differences that produce dew on leaves"
+          ],
+          "spread": [
+            "Favoured by wet and cool conditions",
+            "Spreads through infected crop residues"
+          ],
+          "growth_stage_risk": "Can occur at all growth stages; most damaging during seedling and tillering stages",
+          "treatment": [
+            "Use systemic fungicides such as triazoles or strobilurins when disease pressure is high",
+            "Apply fungicide at the heading stage if symptoms are visible"
+          ],
+          "recommended_pesticides": [],
+          "prevention": [
+            "Plant blast-resistant rice varieties",
+            "Adjust planting time to avoid high humidity periods",
+            "Avoid excessive nitrogen fertilization",
+            "Maintain proper water management and flood fields when possible"
+          ],
+          "additional_management": [
+            "Split nitrogen fertilizer application into multiple doses",
+            "Use silicon fertilizers in silicon-deficient soils to improve plant resistance"
+          ],
+          "yield_impact": "Severe infection reduces leaf area needed for grain filling and can kill young plants, leading to major yield losses",
+          "confused_with": [
+            "rice_brown_spot"
+          ]
+        }
+      ]
+    },
+    {
+      "crop": "sugarcane",
+      "diseases": [
+        {
+          "disease_id": "sugarcane_mosaic",
+          "common_name": "Sugarcane Mosaic",
+          "scientific_name": [
+            "Sugarcane mosaic virus (SCMV)",
+            "Sorghum mosaic virus (SrMV)",
+            "Sugarcane streak mosaic virus (SCSMV)"
+          ],
+          "pathogen_type": "virus",
+          "severity": "medium",
+          "affected_parts": [
+            "leaves"
+          ],
+          "symptoms": [
+            "Irregular yellow and green mosaic patterns on leaves",
+            "Chlorosis and leaf discoloration",
+            "Leaf twisting or deformation",
+            "Reduced plant growth"
+          ],
+          "favourable_conditions": [
+            "Warm temperatures",
+            "High aphid population",
+            "Susceptible crop varieties"
+          ],
+          "spread": [
+            "Aphid transmission",
+            "Infected planting material",
+            "Mechanical transmission through tools"
+          ],
+          "treatment": [],
+          "recommended_pesticides": [],
+          "prevention": [
+            "Use resistant sugarcane varieties",
+            "Use virus-free planting material",
+            "Remove infected plants early",
+            "Control aphid populations"
+          ],
+          "yield_impact": "Reduces photosynthesis and plant growth; causes 10–50% yield loss in severe cases"
+        },
+        {
+          "disease_id": "sugarcane_rust",
+          "common_name": "Sugarcane Brown Rust",
+          "scientific_name": "Puccinia melanocephala",
+          "pathogen_type": "fungus",
+          "severity": "medium",
+          "affected_parts": [
+            "leaves"
+          ],
+          "symptoms": [
+            "Small yellow or light green spots on leaves",
+            "Elongated reddish-brown lesions with yellow halo",
+            "Premature leaf drying",
+            "Burnt leaf appearance in severe infection"
+          ],
+          "favourable_conditions": [
+            "Temperature 15–25°C",
+            "High humidity",
+            "Leaf moisture for 6–9 hours"
+          ],
+          "spread": [
+            "Wind-dispersed spores",
+            "Infected crop residues"
+          ],
+          "treatment": [
+            "Apply Pyraclostrobin fungicide",
+            "Apply Azoxystrobin + Propiconazole",
+            "Repeat spraying twice during infection period"
+          ],
+          "recommended_pesticides": [
+            {
+              "name": "Pyraclostrobin",
+              "product_example": null,
+              "dosage": null
+            },
+            {
+              "name": "Azoxystrobin + Propiconazole",
+              "product_example": null,
+              "dosage": null
+            }
+          ],
+          "prevention": [
+            "Plant resistant varieties",
+            "Remove infected crop residues",
+            "Improve air circulation in fields"
+          ],
+          "yield_impact": "10–20% yield loss normally; up to 50% in severe outbreaks"
+        }
+      ]
+    },
+    {
+      "crop": "tomato",
+      "diseases": [
+        {
+          "disease_id": "tomato_late_blight",
+          "common_name": "Late Blight",
+          "scientific_name": "Phytophthora infestans",
+          "pathogen_type": "oomycete",
+          "severity": "high",
+          "affected_parts": [
+            "leaves",
+            "stems",
+            "fruits"
+          ],
+          "symptoms": [
+            "Water-soaked spots on leaves",
+            "Dark brown or black irregular lesions",
+            "White fuzzy mold on underside of leaves",
+            "Dark patches on stems",
+            "Sunken brown spots on fruits"
+          ],
+          "favourable_conditions": [
+            "Temperature between 15–18°C",
+            "Humidity above 90%",
+            "Cool and wet weather"
+          ],
+          "spread": [
+            "Airborne spores carried by wind",
+            "Rain splash",
+            "Infected plant debris"
+          ],
+          "treatment": [
+            "Spray Copper Oxychloride (2.5 g/L)",
+            "Spray Copper Hydroxide (2 g/L)",
+            "Remove infected plant parts immediately"
+          ],
+          "recommended_pesticides": [
+            {
+              "name": "Copper Oxychloride",
+              "product_example": null,
+              "dosage": "2.5 g per litre of water"
+            },
+            {
+              "name": "Copper Hydroxide",
+              "product_example": null,
+              "dosage": "2 g per litre of water"
+            }
+          ],
+          "prevention": [
+            "Use resistant varieties such as Arka Abhed F1",
+            "Maintain proper plant spacing",
+            "Practice crop rotation",
+            "Use mulching",
+            "Remove infected plants promptly"
+          ],
+          "yield_impact": "Can destroy entire fields within a few days if not controlled",
+          "region": "India"
+        },
+        {
+          "disease_id": "tomato_early_blight",
+          "common_name": "Early Blight",
+          "scientific_name": "Alternaria solani",
+          "pathogen_type": "fungus",
+          "severity": "medium",
+          "affected_parts": [
+            "leaves",
+            "stems",
+            "fruits"
+          ],
+          "symptoms": [
+            "Dark brown spots on older leaves",
+            "Concentric rings giving a target-like pattern",
+            "Yellow halo around lesions",
+            "Leaf yellowing and drying"
+          ],
+          "favourable_conditions": [
+            "Warm temperature 24–29°C",
+            "High humidity",
+            "Wet foliage"
+          ],
+          "spread": [
+            "Fungal spores in soil",
+            "Wind",
+            "Rain splash"
+          ],
+          "treatment": [
+            "Spray Azoxystrobin (0.1%)",
+            "Spray Hexaconazole (0.1%)",
+            "Remove infected leaves"
+          ],
+          "recommended_pesticides": [
+            {
+              "name": "Azoxystrobin",
+              "product_example": null,
+              "dosage": "0.1% solution"
+            },
+            {
+              "name": "Hexaconazole",
+              "product_example": null,
+              "dosage": "0.1% solution"
+            }
+          ],
+          "prevention": [
+            "Practice crop rotation",
+            "Avoid overhead irrigation",
+            "Remove plant debris after harvest"
+          ],
+          "yield_impact": "Significant yield losses if left uncontrolled"
+        }
+      ]
+    },
+    {
+      "crop": "wheat",
+      "diseases": [
+        {
+          "disease_id": "wheat_mildew",
+          "common_name": "Powdery Mildew",
+          "scientific_name": "Blumeria graminis f. sp. tritici",
+          "pathogen_type": "fungus",
+          "severity": "medium",
+          "affected_parts": [
+            "leaves",
+            "stems"
+          ],
+          "symptoms": [
+            "White powdery patches on leaves",
+            "Powdery fungal growth on stems",
+            "Yellowing of leaves",
+            "Reduced plant growth"
+          ],
+          "favourable_conditions": [
+            "Cool temperatures between 15–22°C",
+            "High humidity",
+            "Dense crop canopy"
+          ],
+          "spread": [
+            "Wind-borne fungal spores",
+            "Infected crop residues"
+          ],
+          "treatment": [
+            "Spray Propiconazole fungicide",
+            "Spray Tebuconazole fungicide"
+          ],
+          "recommended_pesticides": [
+            {
+              "name": "Propiconazole",
+              "product_example": null,
+              "dosage": null
+            },
+            {
+              "name": "Tebuconazole",
+              "product_example": null,
+              "dosage": null
+            }
+          ],
+          "prevention": [
+            "Use resistant wheat varieties",
+            "Avoid dense planting",
+            "Ensure proper field ventilation"
+          ],
+          "yield_impact": "Reduces photosynthesis and crop yield if severe"
+        },
+        {
+          "disease_id": "wheat_yellow_rust",
+          "common_name": "Yellow Rust",
+          "scientific_name": "Puccinia striiformis",
+          "pathogen_type": "fungus",
+          "severity": "high",
+          "affected_parts": [
+            "leaves"
+          ],
+          "symptoms": [
+            "Yellow stripes or lines on wheat leaves",
+            "Small yellow pustules arranged in rows",
+            "Leaf drying in severe cases"
+          ],
+          "favourable_conditions": [
+            "Cool temperatures between 10–15°C",
+            "High humidity",
+            "Frequent rainfall"
+          ],
+          "spread": [
+            "Wind-dispersed fungal spores",
+            "Infected crop residues"
+          ],
+          "treatment": [
+            "Spray Propiconazole fungicide",
+            "Spray Tebuconazole fungicide",
+            "Apply fungicide at early infection stage"
+          ],
+          "recommended_pesticides": [
+            {
+              "name": "Propiconazole",
+              "product_example": null,
+              "dosage": null
+            },
+            {
+              "name": "Tebuconazole",
+              "product_example": null,
+              "dosage": null
+            }
+          ],
+          "prevention": [
+            "Plant resistant wheat varieties",
+            "Sow early in the season",
+            "Remove infected crop residues"
+          ],
+          "yield_impact": "Can significantly reduce grain yield if not controlled"
+        }
+      ]
+    }
+  ]
+}
